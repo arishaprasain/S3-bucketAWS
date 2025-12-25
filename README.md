@@ -33,11 +33,30 @@ The notebook provides:
 
 ## Quick Start with Colab
 
-1. Open the [colab_s3_deployment.ipynb](./colab_s3_deployment.ipynb) notebook
-2. Click "Open in Colab" badge (or upload to Google Colab)
+1. Open the [colab_s3_deployment.ipynb](./colab_s3_deployment.ipynb) notebook in Google Colab
+2. Click the "Open in Colab" badge at the top of the notebook
 3. Follow the instructions in the notebook
 4. Configure your AWS credentials
 5. Run the cells to deploy your website to S3
+
+## Alternative: Python Script
+
+If you prefer to use a standalone Python script instead of Colab:
+
+```bash
+# Install boto3
+pip install boto3
+
+# Run the deployment script
+python deploy_to_s3.py
+```
+
+The script will:
+- Prompt for AWS credentials
+- Upload all files from the `public/` directory
+- Configure static website hosting
+- Set up public access policies
+- Display your website URL
 
 ## Prerequisites
 
