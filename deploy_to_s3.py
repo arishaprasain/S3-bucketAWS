@@ -91,7 +91,7 @@ def upload_directory_to_s3(local_directory, bucket_name, s3_client, s3_prefix=''
             # Determine content type
             content_type, _ = mimetypes.guess_type(local_path)
             if content_type is None:
-                content_type = 'binary/octet-stream'
+                content_type = 'application/octet-stream'
             
             try:
                 extra_args = {'ContentType': content_type}
