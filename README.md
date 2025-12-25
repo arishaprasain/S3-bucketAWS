@@ -44,8 +44,8 @@ The notebook provides:
 If you prefer to use a standalone Python script instead of Colab:
 
 ```bash
-# Install boto3
-pip install boto3
+# Install dependencies
+pip install -r requirements.txt
 
 # Run the deployment script
 python deploy_to_s3.py
